@@ -1,21 +1,21 @@
 Package.describe({
-  name: 'jagi:astronomy-validators',
+  name: 'zvictor:astronomy-validators',
   version: '1.1.2',
   summary: 'Validators for Meteor Astronomy',
-  git: 'https://github.com/jagi/meteor-astronomy-validators.git'
+  git: 'https://github.com/zvictor/meteor-astronomy-validators.git'
 });
 
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
 
-  api.use('jagi:astronomy@1.2.3');
+  api.use('zvictor:astronomy@1.2.3');
   api.use('jagi:reactive-map@2.0.0');
   api.use('underscore');
   api.use('check');
   api.use('tracker');
   api.use('ejson');
 
-  api.imply('jagi:astronomy');
+  api.imply('zvictor:astronomy');
 
   // Module.
   api.addFiles([
